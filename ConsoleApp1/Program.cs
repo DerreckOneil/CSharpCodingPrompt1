@@ -11,7 +11,8 @@ public class Program
 
     static void Main()
     {
-        string randomString = "foobar";
+        Console.WriteLine("Enter A string");
+        string randomString = Console.ReadLine();
 
         Console.WriteLine("Soluton = " + PassInAString(randomString));
     }
