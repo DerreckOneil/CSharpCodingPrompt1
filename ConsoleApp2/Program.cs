@@ -14,18 +14,16 @@ public class Program
         Console.WriteLine("Enter A string");
         string randomString = Console.ReadLine();
 
-        CountOccurances(randomString);
+        CountOccurrences(randomString);
 
     }
 
-    static void CountOccurances(string str)
+    static void CountOccurrences(string str)
     {
 
-        char[] chars = str.ToCharArray();
-
-        foreach (char c in chars)
+        foreach (char c in str)
         {
-            Console.WriteLine("Occurances for char " + c + " is " + chars.Count(x => x == c));
+            Console.WriteLine("Occurrences for char " + c + " is " + str.Count(x => x == c));
         }
 
 
